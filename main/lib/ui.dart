@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test/api_integration.dart';
 import 'package:camera/camera.dart';
 import 'dart:convert';
+import 'package:test/web_scraping.dart';
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:test/models.dart';
@@ -16,6 +17,7 @@ class CaptureScreen extends StatefulWidget {
 class CaptureScreenState extends State<CaptureScreen> {
   late CameraController _cameraController;
   final APIIntegration apiIntegration = APIIntegration();
+  final WebScraping webScraping = WebScraping();
 
   bool isIdentifying = false;
 
@@ -56,6 +58,9 @@ class CaptureScreenState extends State<CaptureScreen> {
     final List<Plant>? identifiedPlants = await apiIntegration.identifyPlant(imageBase64);
 
     Navigator.pushNamed(context, '/results', arguments: identifiedPlants);
+    setState(() {
+      isIdentifying = false; // Set isIdentifying to false after returning from ResultsScreen
+    });
   }
 
   @override
@@ -63,30 +68,43 @@ class CaptureScreenState extends State<CaptureScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Plant Identification'),
-        backgroundColor: const Color(0xFF0E6A11),
+        backgroundColor: const Color.fromARGB(255, 14, 106, 17),
       ),
       body: Container(
-        color: const Color(0xFF0E6A11),
-        child: SingleChildScrollView(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/plant2.jpg'),
+            fit: BoxFit.fill,
+          ),
+        ),
+        child: Container(
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 if (_cameraController.value.isInitialized)
-                  AspectRatio(
-                    aspectRatio: 30.0 / 40.0,
-                    child: CameraPreview(_cameraController),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: AspectRatio(
+                      aspectRatio: 30.0 / 40.0,
+                      child: CameraPreview(_cameraController),
+                    ),
                   ),
                 const SizedBox(height: 16.0),
                 ElevatedButton(
                   onPressed: takePicture,
                   style: ElevatedButton.styleFrom(
-                    foregroundColor: Colors.white, backgroundColor: const Color(0xFF0E6A11),
+                    foregroundColor: Colors.white,
+                    backgroundColor: const Color.fromARGB(255, 14, 106, 17),
                     padding: const EdgeInsets.all(16.0),
                   ),
                   child: const Text(
                     'Identify Plant',
-                    style: TextStyle(fontSize: 20.0),
+                    style: TextStyle(
+                      fontSize: 20.0,
+                    ),
                   ),
                 ),
                 if (isIdentifying) const SizedBox(height: 16.0),
@@ -110,11 +128,18 @@ class ResultsScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 10, 93, 13),
         title: const Text('Plant Identification Results'),
-        backgroundColor: const Color(0xFF0A5D0D),
       ),
       body: Container(
-        color: const Color(0xFF0A5D0D),
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/plant3.png'),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: SingleChildScrollView(
           child: Center(
             child: Column(
@@ -126,10 +151,10 @@ class ResultsScreen extends StatelessWidget {
                     margin: const EdgeInsets.all(16.0),
                     child: const Card(
                       elevation: 4.0,
-                      color: Color(0xFFED5656),
+                      color: const Color.fromARGB(255, 237, 86, 86),
                       child: Padding(
-                        padding: EdgeInsets.all(16.0),
-                        child: Text(
+                        padding: const EdgeInsets.all(16.0),
+                        child: const Text(
                           'No plants identified.',
                           style: TextStyle(fontSize: 18.0),
                           textAlign: TextAlign.center,
