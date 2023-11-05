@@ -22,16 +22,16 @@ A Flutter app for identifying plants using the device's camera. This app allows 
 ### Case 1:
 
 <div style="display: flex; flex-direction: row;">
-  <img src="https://github.com/Jai0401/team-plant-id/assets/112328542/3e6bca0a-a05f-4db5-98f4-78c5c0bedb49" alt="Screenshot_20231105-103022" style="width: 50%; height: 50%;">
-  <img src="https://github.com/Jai0401/team-plant-id/assets/112328542/291c7a93-2423-4a46-9b7d-161ef59fc4bb" alt="Screenshot_20231105-103035" style="width: 50%; height: 50%;">
-  <img src="https://github.com/Jai0401/team-plant-id/assets/112328542/a5490615-7d9f-41d2-a62a-75c522c3198f" alt="Screenshot_20231105-103047" style="width: 50%; height: 50%;">
+  <img src="https://github.com/Jai0401/team-plant-id/assets/112328542/3e6bca0a-a05f-4db5-98f4-78c5c0bedb49" alt="Screenshot_20231105-103022" style="width: 30%; height: 30%;">
+  <img src="https://github.com/Jai0401/team-plant-id/assets/112328542/291c7a93-2423-4a46-9b7d-161ef59fc4bb" alt="Screenshot_20231105-103035" style="width: 30%; height: 30%;">
+  <img src="https://github.com/Jai0401/team-plant-id/assets/112328542/a5490615-7d9f-41d2-a62a-75c522c3198f" alt="Screenshot_20231105-103047" style="width: 30%; height: 30%;">
 </div>
 
 ### Case 2:
 
 <div style="display: flex; flex-direction: row;">
-  <img src="https://github.com/Jai0401/team-plant-id/assets/112328542/22816663-d03f-4e8e-9c6f-69ebc5335fb1" alt="Screenshot_20231105-103101" style="width: 50%; height: 50%;">
-  <img src="https://github.com/Jai0401/team-plant-id/assets/112328542/1351e274-ad9d-4840-93f5-128660e2bf6e" alt="Screenshot_20231105-103109" style="width: 50%; height: 50%;">
+  <img src="https://github.com/Jai0401/team-plant-id/assets/112328542/22816663-d03f-4e8e-9c6f-69ebc5335fb1" alt="Screenshot_20231105-103101" style="width: 30%; height: 30%;">
+  <img src="https://github.com/Jai0401/team-plant-id/assets/112328542/1351e274-ad9d-4840-93f5-128660e2bf6e" alt="Screenshot_20231105-103109" style="width: 30%; height: 30%;">
 </div>
 
 
