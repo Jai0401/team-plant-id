@@ -18,18 +18,18 @@ A Flutter app for identifying plants using the device's camera. This app allows 
 - Supports error handling for cases where the API couldn't identify the plant.
 
 ## Screenshots
-###case 1:
-![Screenshot_20231105-103022](https://github.com/Jai0401/team-plant-id/assets/112328542/52c347fc-50a7-4c6e-9f55-70c1acc68f4d)
-![Screenshot_20231105-103035](https://github.com/Jai0401/team-plant-id/assets/112328542/059796fc-5ee9-402d-b526-e6bd5609c8e4)
-![Screenshot_20231105-103047](https://github.com/Jai0401/team-plant-id/assets/112328542/c3c0fad7-48e0-4788-9074-34e00e90e4ec)
+### case 1:
+![Screenshot_20231105-103022](https://github.com/Jai0401/team-plant-id/assets/112328542/3e6bca0a-a05f-4db5-98f4-78c5c0bedb49)
+![Screenshot_20231105-103035](https://github.com/Jai0401/team-plant-id/assets/112328542/291c7a93-2423-4a46-9b7d-161ef59fc4bb)
+![Screenshot_20231105-103047](https://github.com/Jai0401/team-plant-id/assets/112328542/a5490615-7d9f-41d2-a62a-75c522c3198f)
 
-###case 2:
-![Screenshot_20231105-103101](https://github.com/Jai0401/team-plant-id/assets/112328542/8172edac-5ce6-4312-8d53-850126566ffa)
-![Screenshot_20231105-103109](https://github.com/Jai0401/team-plant-id/assets/112328542/a0fe6236-b015-4681-8360-c3c0f3989834)
+### case 2:
+![Screenshot_20231105-103101](https://github.com/Jai0401/team-plant-id/assets/112328542/22816663-d03f-4e8e-9c6f-69ebc5335fb1)
+![Screenshot_20231105-103109](https://github.com/Jai0401/team-plant-id/assets/112328542/1351e274-ad9d-4840-93f5-128660e2bf6e)
 
 ### Prerequisites
 
 - [Flutter](https://flutter.dev/docs/get-started/install)
 
-##Video-demo:
+## Video-demo:
 https://drive.google.com/file/d/1GHyqe1XAMTq2RhZONOtK8K7PENUgNHQi/view?usp=share_link
