@@ -1,4 +1,4 @@
-# team-plant-id
+# Team-Plant-ID
 # Plant Identification App
 
 A Flutter app for identifying plants using the device's camera. This app allows users to take a picture of a plant, and it provides information about the identified plant.
